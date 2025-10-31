@@ -1,0 +1,70 @@
+:root{
+--light-gray : rgba(255, 255, 255, 1);
+--text : rgba(229, 229, 229, 1);
+--blue-gradient : rgba(55, 117, 237, 1);
+--onrange-gradient : rgba(201, 100, 8, 1);
+--purple-gradient : rgba(121, 55, 187, 1);
+--yellow-gradient : rgba(254, 201, 37, 1);
+--dark-grey: rgba(26, 25, 25, 1);
+
+} 
+@font-face {
+    font-family: "Aeonik";
+    src: url("fonts/Aeonik-Regular.woff2") format("woff2"),
+        url("fonts/Aeonik-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Aeonik";
+    src: url("fonts/Aeonik-Bold.woff2") format("woff2"),
+        url("fonts/Aeonik-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Avenir LT Std";
+    src: url("fonts/AvenirLTStd-Roman.woff2") format("woff2"),
+        url("fonts/AvenirLTStd-Roman.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Avenir LT Std";
+    src: url("fonts/AvenirLTStd-Bold.woff2") format("woff2"),
+        url("fonts/AvenirLTStd-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+html, body{
+    font-family: "Aeonik", Arial, sans-serif;
+    font-size : 22px;
+    color: var(--text);
+
+}
+body {
+    background: linear-gradient(180deg, #333333 0%, #090707 11.98%);
+
+}
+
+.text {
+    color: var(--text);
+}
+
+.wrapper {
+    max-width: 1200px;
+    width: 100%;
+    margin-inline: auto;
+}
+.hover-shadow {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-shadow:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+}
